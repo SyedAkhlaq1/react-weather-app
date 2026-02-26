@@ -1,0 +1,132 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #89acec, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main App Container */
+.app {
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+}
+
+/* Glass Card */
+.weather-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 30px 25px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease;
+}
+
+.weather-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-box button {
+  margin-left: 10px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  background: #ffffff;
+  color: #2a5298;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.search-box button:hover {
+  background: #2a5298;
+  color: #fff;
+}
+
+/* Weather Info */
+.weather-icon {
+  width: 100px;
+  margin: 15px 0;
+}
+
+.temperature {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.city {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/* Extra Details */
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.col img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.humidity,
+.wind {
+  font-size: 14px;
+}
+
+/* Error Message */
+.error {
+  color: #ffcccc;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .weather-card {
+    padding: 20px;
+  }
+
+  .temperature {
+    font-size: 36px;
+  }
+}
