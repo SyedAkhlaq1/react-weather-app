@@ -15,7 +15,7 @@ A modern weather application built using React and Vite.
 - React
 - Vite
 
-- OpenWeather API (if used)
+- OpenWeather API
 
 ## 📦 Installation
 
